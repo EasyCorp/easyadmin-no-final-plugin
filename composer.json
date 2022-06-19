@@ -1,0 +1,33 @@
+{
+  "name": "easycorp/easyadmin-no-final-plugin",
+  "type": "composer-plugin",
+  "description": "It removes the 'final' PHP keyword from all EasyAdmin classes so you can extend those classes in your projects.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Project Contributors",
+      "homepage": "https://github.com/EasyCorp/EasyAdminBundle/graphs/contributors"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.2",
+    "composer-plugin-api": "^2.0"
+  },
+  "require-dev": {
+    "composer/composer": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "EasyCorp\\Bundle\\EasyAdminBundle\\": "src"
+    }
+  },
+  "config": {
+    "platform": { "php": "8.0.2" },
+    "preferred-install": { "*": "dist" },
+    "sort-packages": true
+  },
+  "extra": {
+    "class": "EasyCorp\\Bundle\\EasyAdminBundle\\NoFinalClassPlugin"
+  }
+}
+
